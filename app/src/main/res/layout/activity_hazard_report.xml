@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:id="@+id/fragment_report"
+android:orientation="vertical"
+android:background="@color/background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:id="@+id/hazardpic"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <!-- Camera Button -->
+
+    <!-- Hazard Type Spinner -->
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#9997FB"
+        android:text="Take Photo"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Hazard Type"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerHazardType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#949494"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp" />
+
+    <!-- Location Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Location"
+        android:textColorHint="#949494"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Description Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        android:textColorHint="#949494"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundcorner"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:maxLines="5" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#9997FB"
+        android:text="Submit Report"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
+    </FrameLayout>
